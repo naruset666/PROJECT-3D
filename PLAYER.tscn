@@ -1,12 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bmul8hgird7at"]
+[gd_scene load_steps=4 format=3 uid="uid://bmul8hgird7at"]
 
 [ext_resource type="Script" uid="uid://budfeoo8cr0cu" path="res://player.gd" id="1_5qx4t"]
 [ext_resource type="Script" uid="uid://fkat6y2o1ify" path="res://head.gd" id="2_x3g1t"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7nltm"]
 height = 2.06264
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_5qx4t"]
 
 [node name="player" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.659024, 0)
@@ -16,10 +14,9 @@ script = ExtResource("1_5qx4t")
 shape = SubResource("CapsuleShape3D_7nltm")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("CapsuleMesh_5qx4t")
 
 [node name="head" type="Node3D" parent="."]
 script = ExtResource("2_x3g1t")
 
 [node name="Camera3D" type="Camera3D" parent="head"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.559211, 0.0176201)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.880626, -0.138811)
