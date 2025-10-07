@@ -2509,7 +2509,7 @@ transform = Transform3D(2.285, 0, 0, 0, 2.285, 0, 0, 0, 2.285, -0.0001688, 1.907
 [node name="CONTENNER" type="StaticBody3D" parent="PROP"]
 
 [node name="carg" type="CollisionShape3D" parent="PROP/CONTENNER"]
-transform = Transform3D(4.28509, 0, 0.0960715, 0, 1, 0, -0.413588, 0, 0.995375, 0.0216139, 0.569947, 2.59813)
+transform = Transform3D(4.28509, 0, 0.0960715, 0, 1, 0, -0.413588, 0, 0.995375, 2.44499, 0.569947, 1.81445)
 shape = SubResource("BoxShape3D_vj3c0")
 debug_fill = false
 
@@ -2559,7 +2559,7 @@ mesh = SubResource("ArrayMesh_aal5r")
 skeleton = NodePath("")
 
 [node name="carg7" type="CollisionShape3D" parent="PROP/CONTENNER"]
-transform = Transform3D(-0.0494827, 0.0625652, 0.773389, 3.32689, -0.0665926, 0.0168773, 0.291515, 0.770603, -0.0613328, 3.27666, 0.177487, 2.72741)
+transform = Transform3D(-0.0494827, 0.339372, 0.697762, 3.32689, -0.0559047, 0.039926, 0.291515, 0.695614, -0.337211, 5.90576, 0.316808, 1.58369)
 shape = SubResource("BoxShape3D_vj3c0")
 debug_fill = false
 
@@ -2589,7 +2589,7 @@ mesh = SubResource("ArrayMesh_aal5r")
 skeleton = NodePath("")
 
 [node name="carg3" type="CollisionShape3D" parent="PROP/CONTENNER"]
-transform = Transform3D(0.930993, 0, 0.36504, 0, 1, 0, -0.36504, 0, 0.930993, -4.55989, 0.555176, -3.53352)
+transform = Transform3D(0.930993, 0, 0.36504, 0, 1, 0, -0.36504, 0, 0.930993, -4.30635, 0.555176, -3.63293)
 shape = SubResource("BoxShape3D_yd56u")
 debug_fill = false
 
@@ -2700,7 +2700,7 @@ skeleton = NodePath("")
 [node name="BAGSEMEN" type="StaticBody3D" parent="PROP"]
 
 [node name="bag" type="CollisionShape3D" parent="PROP/BAGSEMEN"]
-transform = Transform3D(0.390952, 0, 0.212561, 0, 0.445, 0, -0.212561, 0, 0.390952, -3.045, 0.55, 3.13)
+transform = Transform3D(0.390952, 0, 0.212561, 0, 0.445, 0, -0.212561, 0, 0.390952, -0.745561, 0.55, 1.87979)
 shape = SubResource("BoxShape3D_aal5r")
 debug_fill = false
 
@@ -2709,8 +2709,13 @@ transform = Transform3D(0.999999, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, -0.00213
 mesh = SubResource("ArrayMesh_vo0oc")
 skeleton = NodePath("")
 
-[node name="Bags_2" type="MeshInstance3D" parent="PROP/BAGSEMEN/bag"]
-transform = Transform3D(-0.747496, 0, -0.664263, 0, 0.999999, 0, 0.664263, 0, -0.747496, 39.4073, -1.21683, 43.08)
+[node name="bag8" type="CollisionShape3D" parent="PROP/BAGSEMEN"]
+transform = Transform3D(-0.278342, 0, 0.347205, 0, 0.445, 0, -0.347205, 0, -0.278342, -0.465275, 0.55, 3.06434)
+shape = SubResource("BoxShape3D_aal5r")
+debug_fill = false
+
+[node name="Bags_1" type="MeshInstance3D" parent="PROP/BAGSEMEN/bag8"]
+transform = Transform3D(0.999999, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, -0.00213596, -1.21149, -0.0377807)
 mesh = SubResource("ArrayMesh_vo0oc")
 skeleton = NodePath("")
 
