@@ -1400,9 +1400,19 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_jvupl")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_he1va"]
+albedo_texture = ExtResource("26_a4ptu")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yb0hi"]
+albedo_color = Color(0.176471, 1, 1, 1)
+albedo_texture = ExtResource("26_a4ptu")
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_614p3"]
+radius = 0.624023
+
 [sub_resource type="Environment" id="Environment_614p3"]
 background_mode = 1
-background_color = Color(0.50385, 0.332824, 0.222575, 1)
+background_color = Color(0.931031, 0.779942, 0.674483, 1)
 background_energy_multiplier = 0.23
 ambient_light_color = Color(1, 1, 1, 1)
 tonemap_exposure = 1.11
@@ -1414,16 +1424,6 @@ fog_light_energy = 0.1
 volumetric_fog_enabled = true
 volumetric_fog_density = 0.007
 volumetric_fog_emission = Color(0.362829, 0.362829, 0.362829, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_he1va"]
-albedo_texture = ExtResource("26_a4ptu")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yb0hi"]
-albedo_color = Color(0.176471, 1, 1, 1)
-albedo_texture = ExtResource("26_a4ptu")
-
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_614p3"]
-radius = 0.624023
 
 [node name="Node3D" type="Node3D"]
 
@@ -3151,7 +3151,7 @@ mesh = SubResource("ArrayMesh_aal5r")
 skeleton = NodePath("")
 
 [node name="carg2" type="CollisionShape3D" parent="PROP/CONTENNER"]
-transform = Transform3D(2.57627, 0, -0.801171, 0, 1, 0, 3.44904, 0, 0.598437, -8.32339, 0.563442, 2.58272)
+transform = Transform3D(2.57627, 0, -0.801171, 0, 1, 0, 3.44904, 0, 0.598437, -8.05323, 0.563442, 2.58272)
 shape = SubResource("BoxShape3D_vj3c0")
 debug_fill = false
 
@@ -4429,17 +4429,6 @@ transform = Transform3D(-0.435183, 0, -0.0462772, 0, 0.437637, 0, 0.0462772, 0, 
 mesh = SubResource("ArrayMesh_ybhrs")
 skeleton = NodePath("")
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_614p3")
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.573966, -0.174714, -0.800024, 0.812077, -0.00422745, 0.583536, -0.105334, -0.98461, 0.139455, -26.8983, 46.3606, 1.98359)
-light_color = Color(0.920549, 0.522175, 0.359292, 1)
-light_energy = 0.452
-light_indirect_energy = 2.096
-light_volumetric_fog_energy = 2.644
-shadow_enabled = true
-
 [node name="KEY BARREL 1" type="StaticBody3D" parent="."]
 transform = Transform3D(61.8992, -8.10827, -4.26514e-07, 0, -2.72881e-06, 75.126, -8.10827, -61.8992, -3.25605e-06, 68.7115, 0.707569, -48.3809)
 
@@ -4614,3 +4603,14 @@ omni_range = 5.48648
 [node name="CollisionShape3D" type="CollisionShape3D" parent="KEY BARREL 7"]
 transform = Transform3D(0.0158828, 7.05337e-18, -0.00208051, -0.00208051, -7.00189e-10, -0.0158828, -7.55706e-11, 0.013311, -5.76912e-10, 0.000222504, -0.0003016, -0.00328658)
 shape = SubResource("CylinderShape3D_614p3")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_614p3")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.573966, -0.174714, -0.800024, 0.812077, -0.00422745, 0.583536, -0.105334, -0.98461, 0.139455, -26.8983, 46.3606, 1.98359)
+light_color = Color(0.920549, 0.522175, 0.359292, 1)
+light_energy = 0.452
+light_indirect_energy = 2.096
+light_volumetric_fog_energy = 2.644
+shadow_enabled = true
