@@ -1412,7 +1412,7 @@ radius = 0.624023
 
 [sub_resource type="Environment" id="Environment_614p3"]
 background_mode = 1
-background_color = Color(0.931031, 0.779942, 0.674483, 1)
+background_color = Color(0.694038, 0.466354, 0.295991, 1)
 background_energy_multiplier = 0.23
 ambient_light_color = Color(1, 1, 1, 1)
 tonemap_exposure = 1.11
@@ -1423,7 +1423,7 @@ fog_light_color = Color(1, 1, 1, 1)
 fog_light_energy = 0.1
 volumetric_fog_enabled = true
 volumetric_fog_density = 0.007
-volumetric_fog_emission = Color(0.362829, 0.362829, 0.362829, 1)
+volumetric_fog_emission = Color(0.560955, 0.560955, 0.560955, 1)
 
 [node name="Node3D" type="Node3D"]
 
