@@ -1,0 +1,19 @@
+[gd_scene load_steps=6 format=3 uid="uid://bm4iiabosqwea"]
+
+[ext_resource type="PackedScene" uid="uid://df4885srrx7lt" path="res://Barrels/barrels.fbx" id="1_cnrxk"]
+[ext_resource type="Texture2D" uid="uid://ck8frft3uje7n" path="res://Barrels/barrel.png" id="2_kf3gn"]
+[ext_resource type="Texture2D" uid="uid://ddssabanjlhn0" path="res://Barrels/barrel rust.png" id="3_t2j43"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n5j45"]
+albedo_texture = ExtResource("2_kf3gn")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ny88f"]
+albedo_texture = ExtResource("3_t2j43")
+
+[node name="barrels" instance=ExtResource("1_cnrxk")]
+
+[node name="barrel" parent="." index="2"]
+surface_material_override/0 = SubResource("StandardMaterial3D_n5j45")
+
+[node name="rust barrel" parent="." index="4"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ny88f")

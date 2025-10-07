@@ -1,17 +1,31 @@
-[gd_scene load_steps=2 format=3 uid="uid://q5s231gmqynn"]
+[gd_scene load_steps=3 format=3 uid="uid://q5s231gmqynn"]
 
 [ext_resource type="PackedScene" uid="uid://bxfkv4nucg7el" path="res://Industrial_exterior_v2/Models/IndustrialHorror_PS_like.fbx" id="1_hkmeo"]
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_hkmeo"]
+height = 1.10986
+radius = 0.307129
+
 [node name="IndustrialHorror_PS_like" instance=ExtResource("1_hkmeo")]
+
+[node name="Building_8" parent="." index="7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.004, 0.0104618, 35.9966)
 
 [node name="Building_13" parent="." index="13"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.0181, 0.0620074, -2.017)
 
-[node name="Box_wide_wood" parent="." index="17"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.1406, 0.450666, -69.4529)
+shape = SubResource("CylinderShape3D_hkmeo")
+
+[node name="Box_wide_wood" parent="." index="18"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.9215, 0.0177789, -72.0178)
 
-[node name="Cargo_2_empty" parent="." index="21"]
+[node name="Cargo_2_empty" parent="." index="22"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.0212, 0.0104967, -67.1189)
 
-[node name="Cargo_2_full" parent="." index="22"]
+[node name="Cargo_2_full" parent="." index="23"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.0212, 0.0104967, -65.0099)
+
+[node name="Pipes_horizontal_long" parent="." index="37"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.7155, 0.00581551, -37.4282)
